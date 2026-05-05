@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# WARNING: Launches Claude Code with --dangerously-skip-permissions, which
+# disables ALL safety confirmations. Use only in trusted environments.
+exec node "$(dirname "$0")/../index.js" --dangerously-skip-permissions "$@"

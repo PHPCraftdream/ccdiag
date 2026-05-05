@@ -1,0 +1,20 @@
+# ccdiag configuration example
+# Copy to .ccdiag.ktav and adjust as needed.
+
+# Enable disk logging (default: false)
+log: false
+
+# Plugin settings (all enabled by default)
+plugin.retry-storm.enabled: true
+plugin.identical-request.enabled: true
+plugin.tool-loop.enabled: true
+plugin.rate-burst.enabled: true
+
+# Plugin-specific options
+plugin.rate-burst.windowMs: 5000
+plugin.rate-burst.threshold: 10
+plugin.retry-storm.windowMs: 30000
+plugin.retry-storm.threshold: 5
+
+# External plugins directory (relative to cwd)
+# plugins.dir: .ccdiag/plugins

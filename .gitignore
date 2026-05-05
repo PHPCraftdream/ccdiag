@@ -1,0 +1,12 @@
+node_modules/
+.ccdiag-logs/
+.ccdiag.ktav
+*.log
+.DS_Store
+.env
+.env.*
+
+.ccdiag/
+.crush/
+.vscode/
+.idea/

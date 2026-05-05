@@ -1,0 +1,47 @@
+{
+  "name": "ccdiag",
+  "version": "0.1.0",
+  "description": "Observability wrapper for @anthropic-ai/claude-code CLI",
+  "author": "Marat K <phpcraftdream@gmail.com>",
+  "license": "(MIT OR Apache-2.0)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PHPCraftdream/ccdiag.git"
+  },
+  "homepage": "https://github.com/PHPCraftdream/ccdiag#readme",
+  "bugs": {
+    "url": "https://github.com/PHPCraftdream/ccdiag/issues"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "anthropic",
+    "observability",
+    "proxy",
+    "diagnostics"
+  ],
+  "bin": {
+    "ccdiag": "./bin/ccdiag",
+    "ccdiagy": "./bin/ccdiagy"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "src/",
+    "scripts/",
+    "bin/",
+    ".ccdiag.ktav.example",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@ktav-lang/ktav": "^0.6.1",
+    "json5": "^2.2.3"
+  }
+}
